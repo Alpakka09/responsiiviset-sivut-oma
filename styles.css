@@ -39,3 +39,73 @@ body {
     background-color: var(--tausta);
     color: var(--teksti);
 }
+
+header {
+  background-color: aquamarine;
+  color: #333333;
+  padding: 10px;
+  height: 100px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  border-bottom: #ffffff solid 5px;
+}
+
+.ingressi {
+  font-size: 1.2em;
+  font-style: italic;
+  line-height: 1.6em;
+}
+
+main {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  padding-top: 80px;
+}
+
+
+section {
+  max-width: 1100px;
+  width: 70%;
+  margin: 20px auto;
+}
+
+.showcase {
+  background-color: aquamarine;
+  width: 100%;
+  max-width: 100%;
+  padding: 30px 0;
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 1.7em;
+}
+
+footer{
+  background-color: aquamarine;
+  color: #333333;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.navigointi_nappi {
+  display: inline-block;
+  padding: 10px 20px;         
+  margin: 5px;                 
+  background-color: aquamarine;   
+  color: #333333;              
+  text-decoration: none;   
+  text-align: center;   
+  border-radius: 6px;          
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background 0.2s; 
+}
+
+
+.navigointi_nappi:hover {
+  background-color: #0056b3;  
+  color: #ffffff;
+  text-align: center;
+}
+
