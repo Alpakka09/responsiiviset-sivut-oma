@@ -9,27 +9,82 @@
     box-sizing: border-box;
 }
 .arviointi-taulukko {
-  width: 100%;
+  width: 90%;
+  max-width: 1000px;
+  margin: 30px auto;
   border-collapse: collapse;
   font-family: sans-serif;
+  margin-top: 100px !important;
 }
 
-.arviointi-taulukko th, 
+ 
 .arviointi-taulukko td {
   padding: 15px;
-  text-align: left;
   vertical-align: top;
+  border-bottom: 1px solid #e0e0e0;
 }
-.arviointi-taulukko th:first-child, 
 .arviointi-taulukko td:first-child {
   border-right: 1px solid #ccc; 
   width: 20%;
   font-weight: bold;
 }
+
+.arvosana {
+  font-weight: bold;
+  font-size: 16px;
+  width: 150px;
+  color: #333333;
+}
+
 .arviointi-taulukko ul {
-  list-style-type: none;
-  padding: 0;
+  padding-left: 20px;
   margin: 0;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.arviointi-taulukko li {
+  margin-bottom: 5px;
+}
+
+.sisalto-alue {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sisalto-alue h2 {
+  margin-top: 40px;
+  color: #000000;
+}
+
+.sisalto-alue ul {
+  line-height: 1.6;         
+  margin-bottom: 20px;
+}
+
+.toinen-alue {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.toinen-alue h2 {
+  margin-top: 40px;
+  color: #000000;
+}
+
+.kolmas-alue {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+.kolmas-alue ul {
+  margin-top: 40px;
+  color: #000000;
 }
 
 body {
@@ -44,7 +99,7 @@ header {
   background-color: aquamarine;
   color: #333333;
   padding: 10px;
-  height: 100px;
+  height: auto;
   position: fixed;
   width: 100%;
   top: 0;
@@ -63,6 +118,9 @@ main {
   padding-top: 80px;
 }
 
+.main-section {
+  padding-top: 120px;
+}
 
 section {
   max-width: 1100px;
@@ -94,18 +152,91 @@ footer{
   background-color: aquamarine;   
   color: #333333;              
   text-decoration: none;   
-  text-align: center;   
   border-radius: 6px;          
   font-family: sans-serif;
   font-weight: bold;
   font-size: 14px;
   transition: background 0.2s; 
+  text-align: center;
 }
 
 
 .navigointi_nappi:hover {
   background-color: #0056b3;  
   color: #ffffff;
-  text-align: center;
 }
 
+.navigointi {
+  height: auto !important;
+  padding-bottom: 15px;
+  overflow: visible;
+}
+
+@media only screen and (max-width: 800px) {
+  header {
+    display: inline-block;
+    float: none;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    clear: both;
+  }
+
+  .arviointi-taulukko {
+  width: 90%;
+  max-width: 1000px;
+  margin: 30px auto;
+  border-collapse: collapse;
+  font-family: sans-serif;
+  margin-top: 200px !important;
+}
+
+ 
+.arviointi-taulukko td {
+  padding: 15px;
+  vertical-align: top;
+  border-bottom: 1px solid #e0e0e0;
+}
+.arviointi-taulukko td:first-child {
+  border-right: 1px solid #ccc; 
+  width: 20%;
+  font-weight: bold;
+}
+
+.arvosana {
+  font-weight: bold;
+  font-size: 16px;
+  width: 150px;
+  color: #333333;
+}
+
+.arviointi-taulukko ul {
+  padding-left: 20px;
+  margin: 0;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.arviointi-taulukko li {
+  margin-bottom: 5px;
+}
+.sisalto-alue {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 200px;
+}
+
+.sisalto-alue h2 {
+  margin-top: 40px;
+  color: #000000;
+}
+
+.sisalto-alue ul {
+  line-height: 1.6;         
+  margin-bottom: 20px;
+}
+}
+
+  
